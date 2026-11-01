@@ -6,7 +6,7 @@
 /*   By: zayacoub <zayacoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 16:53:41 by zayacoub          #+#    #+#             */
-/*   Updated: 2026/10/31 18:19:19 by zayacoub         ###   ########.fr       */
+/*   Updated: 2026/11/01 14:17:33 by zayacoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stddef.h>
 # include <stdlib.h>
 
 typedef struct s_list
@@ -32,7 +31,6 @@ int				ft_isalpha(int c);
 int				ft_isascii(int c);
 int				ft_isdigit( int c);
 int				ft_isprint(int c);
-static size_t	ft_numlen(int n);
 void			ft_lstadd_back(t_list **lst, t_list *new);
 void			ft_lstadd_front(t_list **lst, t_list *new);
 void			ft_lstclear(t_list **lst, void (*del)(void *));
@@ -64,5 +62,6 @@ char			*ft_strrchr(const char *s, int c);
 char			*ft_strtrim(char const *s1, char const *set);
 int				ft_tolower(int c);
 int				ft_toupper(int c);
+char			**ft_split(char const *s, char c);
 
 #endif

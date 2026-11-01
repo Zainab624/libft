@@ -6,9 +6,11 @@
 /*   By: zayacoub <zayacoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/15 13:39:30 by zayacoub          #+#    #+#             */
-/*   Updated: 2026/10/15 14:25:35 by zayacoub         ###   ########.fr       */
+/*   Updated: 2026/11/01 18:09:09 by zayacoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit( int c)
 {
