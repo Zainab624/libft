@@ -6,7 +6,7 @@
 /*   By: zayacoub <zayacoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/31 12:45:52 by zayacoub          #+#    #+#             */
-/*   Updated: 2026/10/31 18:04:01 by zayacoub         ###   ########.fr       */
+/*   Updated: 2026/11/02 18:11:04 by zayacoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ static size_t	ft_numlen(int n)
 static void	ft_fillstr(char *res, int nb, size_t dig)
 {
 	long	tmp;
-	size_t	i;
+	int		i;
 
 	tmp = nb;
 	if (tmp < 0)

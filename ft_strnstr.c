@@ -6,13 +6,13 @@
 /*   By: zayacoub <zayacoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/19 19:23:49 by zayacoub          #+#    #+#             */
-/*   Updated: 2026/10/23 12:25:54 by zayacoub         ###   ########.fr       */
+/*   Updated: 2026/11/02 17:49:54 by zayacoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*strnstr(const char *big, const char *little, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	i;
 	size_t	j;

@@ -6,7 +6,7 @@
 /*   By: zayacoub <zayacoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 17:01:39 by zayacoub          #+#    #+#             */
-/*   Updated: 2026/10/28 18:02:14 by zayacoub         ###   ########.fr       */
+/*   Updated: 2026/11/02 14:30:02 by zayacoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (lst == NULL)
+	if (lst == NULL || del == NULL)
 		return ;
 	del(lst->content);
 	free(lst);

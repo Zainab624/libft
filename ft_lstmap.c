@@ -6,7 +6,7 @@
 /*   By: zayacoub <zayacoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/28 19:46:22 by zayacoub          #+#    #+#             */
-/*   Updated: 2026/10/30 13:25:38 by zayacoub         ###   ########.fr       */
+/*   Updated: 2026/11/02 16:48:01 by zayacoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	void	*new_content;
 
 	new_list = NULL;
-	if (lst == NULL)
+	if (!lst || !f || !del)
 		return (NULL);
 	while (lst)
 	{

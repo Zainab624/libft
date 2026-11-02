@@ -6,7 +6,7 @@
 /*   By: zayacoub <zayacoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/27 18:25:17 by zayacoub          #+#    #+#             */
-/*   Updated: 2026/10/27 19:39:49 by zayacoub         ###   ########.fr       */
+/*   Updated: 2026/11/02 18:13:57 by zayacoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 	char	*new_str;
 	size_t	i;
 
+	if (s == NULL || f == NULL)
+		return (NULL);
 	len = ft_strlen(s);
 	new_str = malloc(sizeof(char) * (len + 1));
 	i = 0;
-	if (s == NULL || f == NULL)
-		return (NULL);
 	if (new_str == NULL)
 		return (NULL);
 	while (i < len)
@@ -30,5 +30,6 @@ char	*ft_strmapi(char const *s, char (*f) (unsigned int, char))
 		new_str[i] = f(i, s[i]);
 		i++;
 	}
+	new_str[i] = '\0';
 	return (new_str);
 }

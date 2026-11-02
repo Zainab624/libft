@@ -6,11 +6,11 @@
 /*   By: zayacoub <zayacoub@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/23 11:36:32 by zayacoub          #+#    #+#             */
-/*   Updated: 2026/11/01 17:22:20 by zayacoub         ###   ########.fr       */
+/*   Updated: 2026/11/02 17:53:38 by zayacoub         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 
 {
 	int	sign;
@@ -18,7 +18,7 @@ int	ft_atoi(char *str)
 
 	sign = 1;
 	result = 0;
-	while (*str == '	' || (*str >= 9 && *str <= 13) || *str == ' ')
+	while ((*str >= 9 && *str <= 13) || *str == ' ')
 		str++;
 	if (*str == '-')
 	{
